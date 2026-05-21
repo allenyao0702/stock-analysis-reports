@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>美股开盘后半小时分析报告</title>
+  <meta name="description" content="自动生成的美股/期权分析 HTML 报告">
+  <meta property="og:title" content="\u7f8e\u80a1\u5f00\u76d8\u540e\u534a\u5c0f\u65f6\u5206\u6790\u62a5\u544a">
+  <meta property="og:description" content="每日美股开盘后半小时分析报告（HTML 版）">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://allenyao0702.github.io/stock-analysis-reports/reports/2026-05-20-20260521-034456.html">
+  <style>
+:root {
+  --bg: #0b1020;
+  --panel: #121936;
+  --panel-2: #182246;
+  --text: #e8ecf7;
+  --muted: #aab6d3;
+  --accent: #6ea8fe;
+  --accent-2: #7ee787;
+  --warn: #ffb86b;
+  --border: rgba(255,255,255,0.10);
+  --shadow: 0 20px 40px rgba(0,0,0,0.25);
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; background: linear-gradient(180deg, #08101f 0%, #0d1530 100%); color: var(--text); font: 16px/1.7 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, "PingFang SC", "Microsoft YaHei", sans-serif; }
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+.container { max-width: 980px; margin: 0 auto; padding: 32px 20px 64px; }
+.hero { background: linear-gradient(135deg, rgba(110,168,254,0.20), rgba(126,231,135,0.10)); border: 1px solid var(--border); border-radius: 20px; padding: 28px; box-shadow: var(--shadow); }
+.hero h1 { margin: 0 0 10px; font-size: 32px; line-height: 1.2; }
+.hero .meta { color: var(--muted); font-size: 14px; }
+.nav { margin: 20px 0 28px; display: flex; flex-wrap: wrap; gap: 12px; }
+.nav a, .badge { display: inline-flex; align-items: center; gap: 6px; padding: 8px 12px; border-radius: 999px; background: rgba(255,255,255,0.06); border: 1px solid var(--border); color: var(--text); font-size: 14px; }
+.card { margin-top: 24px; padding: 28px; border-radius: 20px; background: rgba(14, 21, 44, 0.92); border: 1px solid var(--border); box-shadow: var(--shadow); }
+.content h1, .content h2, .content h3, .content h4 { line-height: 1.3; margin: 1.4em 0 0.6em; }
+.content h1 { font-size: 32px; margin-top: 0.2em; }
+.content h2 { font-size: 24px; padding-bottom: 8px; border-bottom: 1px solid var(--border); }
+.content h3 { font-size: 20px; color: #d7e4ff; }
+.content h4 { font-size: 17px; color: #c6d7ff; }
+.content p { margin: 0.8em 0; }
+.content ul, .content ol { margin: 0.8em 0 0.8em 1.4em; padding: 0; }
+.content li { margin: 0.35em 0; }
+.content hr { border: none; border-top: 1px solid var(--border); margin: 28px 0; }
+.content blockquote { margin: 16px 0; padding: 14px 18px; border-left: 4px solid var(--accent); background: rgba(110,168,254,0.10); border-radius: 12px; color: #eff4ff; }
+.content code { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; background: rgba(255,255,255,0.08); padding: 2px 6px; border-radius: 6px; }
+.content pre { background: #0a0f1d; border: 1px solid var(--border); padding: 16px; overflow: auto; border-radius: 14px; }
+.content strong { color: #ffffff; }
+.content em { color: #d8e1ff; }
+.footer { margin-top: 28px; color: var(--muted); font-size: 13px; }
+.archive h2 { margin-top: 0; }
+.archive ul { margin: 0.5em 0 0 1.2em; }
+.archive li { margin: 8px 0; }
+.kv { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 14px; margin-top: 18px; }
+.kv .item { background: rgba(255,255,255,0.04); border: 1px solid var(--border); border-radius: 14px; padding: 14px; }
+.kv .label { color: var(--muted); font-size: 12px; text-transform: uppercase; letter-spacing: .08em; }
+.kv .value { margin-top: 6px; font-size: 15px; }
+@media (max-width: 680px) {
+  .container { padding: 18px 14px 40px; }
+  .hero, .card { padding: 18px; border-radius: 16px; }
+  .hero h1, .content h1 { font-size: 26px; }
+  .content h2 { font-size: 22px; }
+}
+</style>
+</head>
+<body>
+  <div class="container">
+    <section class="hero">
+      <h1>美股开盘后半小时分析报告</h1>
+      <div class="meta">可在线打开的 HTML 报告版本</div>
+      <div class="kv">
+        <div class="item"><div class="label">报告日期</div><div class="value">2026-05-20（周三，美股正常交易日）</div></div>
+        <div class="item"><div class="label">生成时间</div><div class="value">2026-05-20 20:44:56 PDT</div></div>
+        <div class="item"><div class="label">当前链接</div><div class="value"><a href="https://allenyao0702.github.io/stock-analysis-reports/reports/2026-05-20-20260521-034456.html">打开本页</a></div></div>
+        <div class="item"><div class="label">最新报告</div><div class="value"><a href="https://allenyao0702.github.io/stock-analysis-reports/">返回首页 / 最新版</a></div></div>
+      </div>
+    </section>
+
+    <nav class="nav">
+      <a href="https://allenyao0702.github.io/stock-analysis-reports/">最新报告</a>
+      <span class="badge">HTML 版</span>
+      <span class="badge">适合手机阅读</span>
+      <span class="badge">可在 Discord 中点链接打开</span>
+    </nav>
+
+    <article class="card content">
+      <h1>美股开盘后半小时分析报告</h1>
+<p><strong>日期：2026-05-20（周三，美股正常交易日）</strong><br>
+<strong>执行时点：主机 07:50 PDT / 美东 10:50 ET 附近</strong><br>
+<strong>结论：今天是正常交易日，且脚本数据已更新到 2026-05-20，可给出“可执行但偏选择性”的新开仓建议。</strong></p>
+<hr>
+<h2>一、市场环境结论</h2>
+<h3>总体判断</h3>
+<p>今天盘面更像<strong>风险偏好仍在、但只奖励流动性与叙事清晰标的</strong>的一天，风险级别我定为：</p>
+<blockquote>
+<p><strong>风险级别：中等偏高</strong></p>
+</blockquote>
+<p>原因如下：</p>
+<ol>
+<li><strong>AI 主线没有破坏</strong></li>
+</ol>
+<ul>
+<li>NVDA、GOOGL 仍在强势均线上方运行，20日/50日均线维持上倾，说明大方向没有转空。</li>
+<li>但两者都出现了一个共同问题：<strong>动能还在，但加速并不强</strong>，更适合等确认，不适合无脑追高。</li>
+</ul>
+<ol>
+<li><strong>热点榜噪声很重</strong></li>
+</ol>
+<ul>
+<li>Finviz 的 top gainers / unusual volume 继续被大量微盘、生物科技、低价情绪股占据。</li>
+<li>这类票虽然涨幅夸张，但<strong>没有稳定期权链、没有可靠风控边界、滑点与隔夜跳空风险很高</strong>。</li>
+</ul>
+<ol>
+<li><strong>更值得信任的筛选层仍是：major<em>news + most</em>active + 历史跟踪重合</strong></li>
+</ol>
+<ul>
+<li>今天最有效的交集仍然集中在：<strong>NVDA、GOOGL、TGT</strong></li>
+<li>这些标的虽然未必是涨幅榜第一，但有三个优势：</li>
+<li>流动性更好</li>
+<li>技术位更清晰</li>
+<li>期权结构可做风险定义</li>
+</ul>
+<ol>
+<li><strong>防守工具不适合当主线</strong></li>
+</ol>
+<ul>
+<li>TZA 这类反向 ETF 今天更多是<strong>组合对冲观察工具</strong>，不是主进攻标的。</li>
+</ul>
+<blockquote>
+<p><strong>一句话结论：</strong></p>
+<p>今天适合做 <strong>“高流动性龙头的确认型交易 + 情绪票只观察不重仓”</strong>，不适合把仓位压在微盘爆量股上。</p>
+</blockquote>
+<hr>
+<h2>二、Finviz / Yahoo 热门 / 历史跟踪交叉分析</h2>
+<h3>1）今天哪些信号最有用</h3>
+<ul>
+<li><strong>Finviz major_news：</strong> NVDA、TGT、GOOGL、META、MU、AMZN、ADI 等</li>
+<li><strong>Finviz most_active：</strong> TZA、SLXN、HCWB、GCL、NVDA 等</li>
+<li><strong>Finviz unusual_volume：</strong> PETZ、SLXN、GCL 等</li>
+<li><strong>Yahoo 热门：</strong> NVDA、TGT、ARM、SMCI、ADI、INTC、GS、GCL 等</li>
+</ul>
+<h3>2）重合度与冲突</h3>
+<p><strong>高质量重合：</strong></p>
+<ul>
+<li><strong>NVDA</strong>：major_news + Yahoo 热门 + 历史已连续跟踪</li>
+<li><strong>GOOGL</strong>：major_news + 历史已跟踪</li>
+<li><strong>TGT</strong>：major_news + Yahoo 热门，且财报后走势清楚</li>
+</ul>
+<p><strong>高噪声重合：</strong></p>
+<ul>
+<li><strong>HCWB / SLXN / GCL / PETZ</strong></li>
+<li>主要由 top gainers、unusual volume、most active 推高</li>
+<li>但共同缺点是：</li>
+<li>微盘/低价</li>
+<li>无稳定期权结构</li>
+<li>RSI 过热或波动失真</li>
+<li>很难做机构化风控</li>
+</ul>
+<h3>3）今天的筛选原则</h3>
+<p>今天我把标的分成两层：</p>
+<ul>
+<li><strong>A层：可做计划的主交易标的</strong></li>
+<li>NVDA</li>
+<li>GOOGL</li>
+<li>TGT</li>
+</ul>
+<ul>
+<li><strong>B层：只做观察或极小仓试错的情绪标的</strong></li>
+<li>HCWB</li>
+<li>SLXN</li>
+<li>GCL</li>
+<li>PETZ</li>
+</ul>
+<p>另加：</p>
+<ul>
+<li><strong>TZA：只作为防守/对冲观察，不列入主攻名单</strong></li>
+</ul>
+<hr>
+<h2>三、今日最终重点名单与排序</h2>
+<h3>今日重点排序</h3>
+<ol>
+<li><strong>NVDA</strong> — AI 主线核心，流动性最好，结构最清晰</li>
+<li><strong>GOOGL</strong> — AI 叙事+大市值平台，回踩确认后更稳</li>
+<li><strong>TGT</strong> — 财报后弱反应，做空结构清晰</li>
+<li><strong>HCWB</strong> — 动量最强，但只适合观察，不适合重仓追高</li>
+<li><strong>SLXN</strong> — 高波动事件票，必须等突破确认</li>
+<li><strong>GCL</strong> — 新闻驱动爆量，但属于高噪声情绪延续票</li>
+<li><strong>PETZ</strong> — unusual volume 明显，但基本面催化和持续性较弱</li>
+<li><strong>TZA</strong> — 防守工具，仅在组合需要对冲时考虑</li>
+</ol>
+<hr>
+<h2>四、重点标的详细交易计划</h2>
+<blockquote>
+<p>说明：本轮 CLI 使用 6 个月日线窗口，<strong>SMA200 多数缺失</strong>，因此长期趋势只做辅助，不作为本轮核心判断。</p>
+<p>另外，<strong>工具未直接给出精确 Greeks 数值</strong>，下述 Greeks 仅给出结构性风险方向，精确 Delta/Gamma/Theta/Vega 需用券商实时报价复核。</p>
+</blockquote>
+<hr>
+<h3>1）NVDA — <strong>谨慎偏多，等确认，不追第一脚</strong></h3>
+<p><strong>当前价：$222.97</strong></p>
+<h4>技术结构</h4>
+<ul>
+<li><strong>SMA20 / SMA50：213.37 / 195.48</strong></li>
+<li>价格站稳 20 日、50 日均线，上方结构仍偏多。</li>
+<li><strong>EMA12 / EMA26：219.03 / 210.69</strong></li>
+<li>EMA12 仍在 EMA26 上方，多头趋势未坏。</li>
+<li><strong>RSI14：61.53</strong></li>
+<li>偏强，但不是极端过热，说明仍有上冲空间。</li>
+<li><strong>MACD：8.34 / 8.04 / 0.30</strong></li>
+<li>仍属多头排列，但柱体不大，说明<strong>动能在、加速不足</strong>。</li>
+<li><strong>布林带位置：71.74%</strong></li>
+<li>靠近上半区，但未贴上轨，说明不是最危险的位置。</li>
+<li><strong>ATR14：8.09（ATR/价格 3.63%）</strong></li>
+<li>日内正常波动不小，不能把止损设得太紧。</li>
+<li><strong>成交量：1.20亿，对比20日均量 0.76倍</strong></li>
+<li>上涨但没有明显放量，<strong>突破需要量能确认</strong>。</li>
+<li><strong>OBV：正向累积</strong></li>
+<li>总体仍支持多头，但短线确认度一般。</li>
+</ul>
+<h4>关键位</h4>
+<ul>
+<li><strong>支撑：219.48 / 213.37 / 208.93</strong></li>
+<li><strong>阻力：235.44</strong></li>
+</ul>
+<h4>交易计划</h4>
+<ul>
+<li><strong>突破型入场：</strong></li>
+<li>站稳 <strong>225</strong> 且量能改善，再做顺势多单</li>
+<li><strong>回踩型入场：</strong></li>
+<li>回踩 <strong>219.48-213.37</strong> 企稳后分批</li>
+<li><strong>失效位：</strong></li>
+<li>跌破 <strong>213.37</strong> 先减仓</li>
+<li>跌破 <strong>208.93</strong> 视为这轮多头结构失效</li>
+<li><strong>目标位：</strong></li>
+<li>先看 <strong>229 附近</strong>（对应价差盈亏平衡一带）</li>
+<li>再看 <strong>235.44</strong></li>
+</ul>
+<h4>期权策略</h4>
+<p><strong>首选：Bull Call Spread 225/235C，2026-06-26</strong></p>
+<ul>
+<li>参考成本：<strong>debit 约 $4.00</strong></li>
+<li>最大收益：<strong>$600</strong></li>
+<li>最大亏损：<strong>$400</strong></li>
+<li>盈亏平衡：<strong>$229</strong></li>
+<li>适用原因：</li>
+<li>趋势偏多，但动能不是爆发式</li>
+<li>IV 中位约 <strong>52%</strong>，直接裸买 Call 容易吃时间价值</li>
+<li>用借记价差更适合今天这种<strong>“偏多但要控成本”</strong>的结构</li>
+<li><strong>Greeks 暴露方向：</strong></li>
+<li>净 <strong>正 Delta</strong></li>
+<li>轻微 <strong>正 Gamma</strong></li>
+<li><strong>负 Theta</strong></li>
+<li><strong>正 Vega</strong></li>
+<li><strong>精确值工具未提供，需券商复核</strong></li>
+</ul>
+<h4>核心风险</h4>
+<ul>
+<li>财报/事件预期仍可能让 IV 与价格脱钩</li>
+<li>若 QQQ 同步转弱，NVDA 的个股强势可能失真</li>
+</ul>
+<hr>
+<h3>2）GOOGL — <strong>偏多，但比 NVDA 更适合“回踩确认后做”</strong></h3>
+<p><strong>当前价：$388.11</strong></p>
+<h4>技术结构</h4>
+<ul>
+<li><strong>SMA20 / SMA50：381.08 / 337.96</strong></li>
+<li>价格稳在 20/50 日均线上方，中期趋势健康。</li>
+<li><strong>EMA12 / EMA26：388.74 / 372.29</strong></li>
+<li>EMA12 仍高于 EMA26，但现价贴近 EMA12，短线在平衡位。</li>
+<li><strong>RSI14：62.31</strong></li>
+<li>偏强，但并未极热。</li>
+<li><strong>MACD：16.45 / 18.73 / -2.28</strong></li>
+<li>MACD 仍在高位但柱体转负，说明<strong>上涨趋势在，短线动能回落</strong>。</li>
+<li><strong>布林带位置：58.25%</strong></li>
+<li>更像中高位整理，而不是极端扩张。</li>
+<li><strong>ATR14：9.81（2.53%）</strong></li>
+<li>波动不小，但比情绪股可控。</li>
+<li><strong>成交量：0.73倍20日均量</strong></li>
+<li>量能不强，所以<strong>突破单必须等放量</strong>。</li>
+<li><strong>OBV：仍偏正</strong></li>
+<li>对中期多头仍有支撑。</li>
+</ul>
+<h4>关键位</h4>
+<ul>
+<li><strong>支撑：382.77 / 376.40 / 356.47</strong></li>
+<li><strong>阻力：408.61 / 423.69</strong></li>
+</ul>
+<h4>交易计划</h4>
+<ul>
+<li><strong>回踩做多优先：</strong></li>
+<li>守住 <strong>382.77</strong> 并重新站回 <strong>390</strong></li>
+<li><strong>突破做多：</strong></li>
+<li>放量突破 <strong>408.61</strong></li>
+<li><strong>失效位：</strong></li>
+<li>收盘跌破 <strong>376.40</strong>，短线偏多失效</li>
+<li><strong>目标位：</strong></li>
+<li><strong>398.15</strong> 上方开始管理盈利</li>
+<li>第一目标 <strong>408.61</strong></li>
+<li>强势延伸看 <strong>423.69</strong></li>
+</ul>
+<h4>期权策略</h4>
+<p><strong>首选：Bull Call Spread 390/410C，2026-06-26</strong></p>
+<ul>
+<li>参考成本：<strong>debit 约 $8.15</strong></li>
+<li>最大收益：<strong>$1,185</strong></li>
+<li>最大亏损：<strong>$815</strong></li>
+<li>盈亏平衡：<strong>$398.15</strong></li>
+</ul>
+<p><strong>备选：Bull Put Spread 385/375P，2026-06-26</strong></p>
+<ul>
+<li>适合前提：必须先确认 <strong>382.77</strong> 支撑有效</li>
+</ul>
+<ul>
+<li>适用原因：</li>
+<li>GOOGL 趋势比情绪股稳定，但 MACD 柱体转弱</li>
+<li>更适合<strong>确认后做中等杠杆</strong>，而非直接追涨裸买</li>
+<li><strong>Greeks 暴露方向：</strong></li>
+<li>Bull Call Spread：正 Delta / 轻正 Gamma / 负 Theta / 正 Vega</li>
+<li>Bull Put Spread：正 Delta / 负 Gamma / 正 Theta / 负 Vega</li>
+<li><strong>精确值工具未提供，需券商复核</strong></li>
+</ul>
+<h4>核心风险</h4>
+<ul>
+<li>Google AI 主题新闻多，但市场消化速度快</li>
+<li>量能不足时，容易走成横盘磨时间价值</li>
+</ul>
+<hr>
+<h3>3）TGT — <strong>今天最清晰的偏空结构之一</strong></h3>
+<p><strong>当前价：$122.08</strong></p>
+<h4>技术结构</h4>
+<ul>
+<li><strong>SMA20 / SMA50：125.99 / 122.58</strong></li>
+<li>现价低于 SMA20，也略低于 SMA50，短中期偏弱。</li>
+<li><strong>EMA12 / EMA26：124.13 / 124.36</strong></li>
+<li>EMA12 低于 EMA26，说明短线仍是弱势修复而非强反转。</li>
+<li><strong>RSI14：46.26</strong></li>
+<li>中性偏弱，不是超卖，仍有下探空间。</li>
+<li><strong>MACD：-0.23 / 0.35 / -0.58</strong></li>
+<li>空头排列，柱体偏负，空方更主动。</li>
+<li><strong>布林带位置：22.82%</strong></li>
+<li>位于下半区，不是极端恐慌，但走势偏弱明确。</li>
+<li><strong>ATR14：4.56（3.74%）</strong></li>
+<li>财报后波动扩大，适合用定义风险结构。</li>
+<li><strong>成交量：3.16倍20日均量</strong></li>
+<li>下跌伴随放量，说明卖压有真实性。</li>
+<li><strong>OBV：偏弱</strong></li>
+<li>与价格同步，不支持逆势抄底。</li>
+</ul>
+<h4>关键位</h4>
+<ul>
+<li><strong>支撑：118.80 / 117.67 / 115.34</strong></li>
+<li><strong>阻力：122.13 / 123.74 / 125.99</strong></li>
+</ul>
+<h4>交易计划</h4>
+<ul>
+<li><strong>偏空入场：</strong></li>
+<li>反弹无法重新站稳 <strong>122.13-123.74</strong></li>
+<li>或跌破 <strong>117.67</strong> 后等反抽失败</li>
+<li><strong>失效位：</strong></li>
+<li>站稳 <strong>123.74</strong>，偏空逻辑弱化</li>
+<li>站回 <strong>125.99</strong> 应认定为错误</li>
+<li><strong>目标位：</strong></li>
+<li>先看 <strong>119.10</strong> 附近的期权盈亏平衡带</li>
+<li>再看 <strong>117.67 / 115.34</strong></li>
+</ul>
+<h4>期权策略</h4>
+<p><strong>首选：Bear Put Spread 122/118P，2026-06-26</strong></p>
+<ul>
+<li>参考成本：<strong>debit 约 $2.90</strong></li>
+<li>最大收益：<strong>$110</strong></li>
+<li>最大亏损：<strong>$290</strong></li>
+<li>盈亏平衡：<strong>$119.10</strong></li>
+</ul>
+<p><strong>备选：Bear Call Spread 123/127C，2026-06-26</strong></p>
+<ul>
+<li>更适合想吃时间价值、但能接受被动管理的人</li>
+</ul>
+<ul>
+<li>适用原因：</li>
+<li>趋势偏空，量价配合也支持空方</li>
+<li>但 IV 与价差一般，不适合裸买太多单边 Put</li>
+<li><strong>Greeks 暴露方向：</strong></li>
+<li>Bear Put Spread：负 Delta / 正 Gamma / 负 Theta / 正 Vega</li>
+<li>Bear Call Spread：负 Delta / 负 Gamma / 正 Theta / 负 Vega</li>
+<li><strong>精确值工具未提供，需券商复核</strong></li>
+</ul>
+<h4>核心风险</h4>
+<ul>
+<li>财报后若有二次解读，容易出现急速反抽</li>
+<li>期权链价差偏宽，务必用限价单</li>
+</ul>
+<hr>
+<h3>4）HCWB — <strong>最强动量之一，但只观察，不追</strong></h3>
+<p><strong>当前价：$2.33</strong></p>
+<h4>技术结构</h4>
+<ul>
+<li><strong>SMA20 / SMA50：0.60 / 0.52</strong></li>
+<li>价格远离均线，说明不是“稳健上升”，而是“爆量加速”。</li>
+<li><strong>EMA12 / EMA26：0.94 / 0.69</strong></li>
+<li>短线极强，但过热明显。</li>
+<li><strong>RSI14：83.53</strong></li>
+<li>明确超买。</li>
+<li><strong>MACD：0.25 / 0.08 / 0.18</strong></li>
+<li>多头增强，但通常这种位置容易出现高位震荡。</li>
+<li><strong>布林带位置：134.71%</strong></li>
+<li>已明显跑到布林带上轨之外。</li>
+<li><strong>ATR14：0.39（16.81%）</strong></li>
+<li>波动极高。</li>
+<li><strong>成交量：5.35倍20日均量</strong></li>
+<li>强势放量，但也意味着高位换手风险很大。</li>
+<li><strong>OBV：强</strong></li>
+<li>资金流入明显，但不代表适合追价。</li>
+</ul>
+<h4>关键位</h4>
+<ul>
+<li><strong>支撑：2.12 / 1.68 / 1.62</strong></li>
+<li><strong>阻力：2.56 / 3.11</strong></li>
+</ul>
+<h4>交易计划</h4>
+<ul>
+<li><strong>只做回踩观察：</strong></li>
+<li>回踩 <strong>2.12</strong> 不破、量能缩下来，才有观察价值</li>
+<li><strong>突破短打：</strong></li>
+<li>只有放量过 <strong>2.56</strong> 才允许极小仓试单</li>
+<li><strong>失效位：</strong></li>
+<li>跌破 <strong>2.12</strong>，短线强势破坏</li>
+<li>跌破 <strong>1.68</strong>，情绪退潮</li>
+<li><strong>目标位：</strong></li>
+<li><strong>2.56</strong> 先减</li>
+<li>强势看 <strong>3.11</strong></li>
+</ul>
+<h4>期权</h4>
+<ul>
+<li><strong>无可用期权链</strong></li>
+<li>结论：<strong>不列入主交易计划</strong></li>
+</ul>
+<h4>核心风险</h4>
+<ul>
+<li>超买、离均线太远、隔夜跳空与回撤速度都很快</li>
+</ul>
+<hr>
+<h3>5）SLXN — <strong>高波动事件票，必须等结构确认</strong></h3>
+<p><strong>当前价：$0.50</strong></p>
+<h4>技术结构</h4>
+<ul>
+<li><strong>SMA20 / SMA50：0.56 / 0.98</strong></li>
+<li>价格仍在 20 日与 50 日均线下方，底层趋势并不健康。</li>
+<li><strong>EMA12 / EMA26：0.48 / 0.65</strong></li>
+<li>EMA12 低于 EMA26，反弹性质更强于趋势反转。</li>
+<li><strong>RSI14：39.56</strong></li>
+<li>偏弱，不是强趋势多头。</li>
+<li><strong>MACD：-0.18 / -0.18 / 0.00</strong></li>
+<li>有企稳迹象，但不够强。</li>
+<li><strong>布林带位置：39.72%</strong></li>
+<li>仍在中下部区域。</li>
+<li><strong>ATR14：0.10（20.62%）</strong></li>
+<li>波动极端大。</li>
+<li><strong>成交量：19.48倍20日均量</strong></li>
+<li>爆量，但更像消息驱动而非可持续趋势。</li>
+<li><strong>OBV：改善</strong></li>
+<li>说明短线有人气，但不足以覆盖结构弱点。</li>
+</ul>
+<h4>关键位</h4>
+<ul>
+<li><strong>支撑：0.24 / 0.23</strong></li>
+<li><strong>阻力：0.56 / 0.60 / 0.87</strong></li>
+</ul>
+<h4>交易计划</h4>
+<ul>
+<li><strong>唯一可接受的多头条件：</strong></li>
+<li>重新站上 <strong>0.56</strong>，并放量突破 <strong>0.60</strong></li>
+<li><strong>不做低位猜底</strong></li>
+<li><strong>失效位：</strong></li>
+<li>重新跌回 <strong>0.50</strong> 下方且量能衰减，不做</li>
+<li>失守 <strong>0.24</strong> 完全回避</li>
+<li><strong>目标位：</strong></li>
+<li>突破后看 <strong>0.87</strong></li>
+</ul>
+<h4>期权</h4>
+<ul>
+<li><strong>无可用期权链</strong></li>
+</ul>
+<h4>核心风险</h4>
+<ul>
+<li>微盘生物科技，日内可以很强，但隔夜与回撤风险不适合常规仓位</li>
+</ul>
+<hr>
+<h3>6）GCL — <strong>新闻驱动+爆量，但仍归类为观察票</strong></h3>
+<p><strong>当前价：$0.83</strong></p>
+<h4>技术结构</h4>
+<ul>
+<li><strong>SMA20 / SMA50：0.50 / 0.56</strong></li>
+<li>价格站上均线，短线转强。</li>
+<li><strong>EMA12 / EMA26：0.52 / 0.52</strong></li>
+<li>刚刚进入拐点阶段，还不是成熟趋势。</li>
+<li><strong>RSI14：77.55</strong></li>
+<li>已偏热。</li>
+<li><strong>MACD：金叉</strong></li>
+<li>动能增强，但容易变成一日情绪。</li>
+<li><strong>布林带位置：149.66%</strong></li>
+<li>已明显越过上轨，追高性价比差。</li>
+<li><strong>ATR14：0.06（7.30%）</strong></li>
+<li>绝对价格低，但相对波动仍不小。</li>
+<li><strong>成交量：15.16倍20日均量</strong></li>
+<li>情绪明显。</li>
+<li><strong>OBV：改善</strong></li>
+<li>有资金推动，但持续性待验证。</li>
+</ul>
+<h4>关键位</h4>
+<ul>
+<li><strong>支撑：0.82 / 0.66 / 0.64</strong></li>
+<li><strong>阻力：0.95 / 1.07 / 1.23</strong></li>
+</ul>
+<h4>交易计划</h4>
+<ul>
+<li><strong>只做观察，不追高</strong></li>
+<li>若能在 <strong>0.82</strong> 上方横住，再看是否冲 <strong>0.95</strong></li>
+<li>跌破 <strong>0.82</strong> 则短线转弱</li>
+<li><strong>目标位：</strong> 0.95，强势延伸 1.07</li>
+</ul>
+<h4>期权</h4>
+<ul>
+<li><strong>无可用期权链</strong></li>
+</ul>
+<h4>核心风险</h4>
+<ul>
+<li>低价、新闻驱动、容易高开低走</li>
+</ul>
+<hr>
+<h3>7）PETZ — <strong>异常放量，但持续性最存疑</strong></h3>
+<p><strong>当前价：$1.15</strong></p>
+<h4>技术结构</h4>
+<ul>
+<li><strong>SMA20 / SMA50：0.99 / 1.09</strong></li>
+<li>价格重新站上均线，短线修复成立。</li>
+<li><strong>EMA12 / EMA26：0.98 / 1.01</strong></li>
+<li>接近拐点，强度一般。</li>
+<li><strong>RSI14：60.23</strong></li>
+<li>偏强但不极端。</li>
+<li><strong>MACD：金叉</strong></li>
+<li>动能改善。</li>
+<li><strong>布林带位置：119.02%</strong></li>
+<li>已经略微过热。</li>
+<li><strong>ATR14：0.08（6.65%）</strong></li>
+<li>绝对价低，日内振幅不小。</li>
+<li><strong>成交量：19.91倍20日均量</strong></li>
+<li>放量极端，但这类量未必具有延续性。</li>
+<li><strong>OBV：改善</strong></li>
+<li>说明情绪有跟进，但缺乏基本面支撑。</li>
+</ul>
+<h4>关键位</h4>
+<ul>
+<li><strong>支撑：1.12 / 1.11 / 1.09</strong></li>
+<li><strong>阻力：1.20 / 1.29</strong></li>
+</ul>
+<h4>交易计划</h4>
+<ul>
+<li><strong>只观察 1.20 能否有效突破</strong></li>
+<li>若回踩 <strong>1.12-1.11</strong> 不破，可看二次冲高</li>
+<li><strong>失效位：</strong></li>
+<li>跌破 <strong>1.09</strong></li>
+<li><strong>目标位：</strong></li>
+<li>先看 <strong>1.20</strong></li>
+<li>再看 <strong>1.29</strong></li>
+</ul>
+<h4>期权</h4>
+<ul>
+<li><strong>无可用期权链</strong></li>
+</ul>
+<h4>核心风险</h4>
+<ul>
+<li>纯情绪属性偏重，不适合作核心仓位</li>
+</ul>
+<hr>
+<h3>8）TZA — <strong>只作为对冲观察，不列主交易计划</strong></h3>
+<p><strong>当前价：$4.85</strong></p>
+<h4>技术结构简述</h4>
+<ul>
+<li>价格在 <strong>SMA20/SMA50</strong> 下方，趋势偏空</li>
+<li><strong>RSI 43.33</strong>，偏弱</li>
+<li><strong>MACD 柱体改善但整体仍弱</strong></li>
+<li><strong>成交量 1.47 倍均量</strong>，下跌放量</li>
+<li>当前更像<strong>风险偏好改善下的反向工具走弱</strong></li>
+</ul>
+<h4>关键位</h4>
+<ul>
+<li><strong>支撑：4.56 / 4.43</strong></li>
+<li><strong>阻力：4.89 / 4.92 / 5.21</strong></li>
+</ul>
+<h4>用法</h4>
+<ul>
+<li>不是主做对象</li>
+<li>只有当 <strong>IWM 明显转弱、TZA 重新站上 4.89-4.92</strong> 时，才考虑把它作为<strong>小仓位防守仓</strong></li>
+</ul>
+<h4>风险</h4>
+<ul>
+<li>三倍反向 ETF 有明显路径损耗</li>
+<li>期权价差宽，不适合常规短线主攻</li>
+</ul>
+<hr>
+<h2>五、今日最值得执行的 3 个计划</h2>
+<h3>A. NVDA — 主多头计划</h3>
+<ul>
+<li><strong>条件：</strong> 225 上方放量确认，或 219.48-213.37 回踩企稳</li>
+<li><strong>结构：</strong> Bull Call Spread 225/235C 2026-06-26</li>
+<li><strong>理由：</strong> AI 主线核心 + 均线健康 + IV 不低，适合 defined-risk 借记价差</li>
+</ul>
+<h3>B. GOOGL — 次主多头计划</h3>
+<ul>
+<li><strong>条件：</strong> 守住 382.77 并重新站回 390，或放量突破 408.61</li>
+<li><strong>结构：</strong> Bull Call Spread 390/410C 2026-06-26</li>
+<li><strong>理由：</strong> 趋势仍多，但 MACD 动能回落，适合确认后做，不适合追</li>
+</ul>
+<h3>C. TGT — 主空头计划</h3>
+<ul>
+<li><strong>条件：</strong> 反弹不过 122.13-123.74，或跌破 117.67 后反抽失败</li>
+<li><strong>结构：</strong> Bear Put Spread 122/118P 2026-06-26</li>
+<li><strong>理由：</strong> 财报后弱反应 + 放量下跌 + MACD 空头排列，方向最清楚</li>
+</ul>
+<hr>
+<h2>六、组合层面风险控制</h2>
+<h3>1）最多同时持仓数</h3>
+<ul>
+<li><strong>建议：最多 3 笔</strong></li>
+<li>方向单 2 笔</li>
+<li>观察/对冲 1 笔</li>
+</ul>
+<h3>2）单笔最大风险</h3>
+<ul>
+<li><strong>单笔最大亏损控制在账户净值 1%-2%</strong></li>
+<li>今天这种环境不建议放宽到 3%-5%，因为热点噪声太高</li>
+</ul>
+<h3>3）相关性控制</h3>
+<ul>
+<li><strong>不要同时重仓 NVDA + GOOGL + 其他半导体/AI 高 Beta 标的同向看多</strong></li>
+<li>NVDA 与 AI/QQQ 风险高度耦合，GOOGL 也会受大盘科技权重影响</li>
+<li>若已做 NVDA，多头仓位里再加 GOOGL 应减半，而不是等额叠加</li>
+</ul>
+<h3>4）QQQ / SPY 应急方案</h3>
+<ul>
+<li>若 <strong>QQQ 跌破早盘关键支撑并放量转弱</strong></li>
+<li>取消 NVDA、GOOGL 的突破单</li>
+<li>已开仓则缩小目标，优先保护利润</li>
+<li>若 <strong>SPY / QQQ 同步转弱</strong></li>
+<li>今天所有微盘动量票（HCWB、SLXN、GCL、PETZ）都应直接降权</li>
+<li>若市场突然转成风险厌恶</li>
+<li>才考虑 TZA 一类对冲工具，且仅小仓位</li>
+</ul>
+<hr>
+<h2>七、今天的最终执行建议</h2>
+<h3>可执行</h3>
+<ul>
+<li><strong>NVDA：等确认后偏多</strong></li>
+<li><strong>GOOGL：回踩确认后偏多</strong></li>
+<li><strong>TGT：反弹失败后偏空</strong></li>
+</ul>
+<h3>只观察，不建议主仓</h3>
+<ul>
+<li><strong>HCWB</strong></li>
+<li><strong>SLXN</strong></li>
+<li><strong>GCL</strong></li>
+<li><strong>PETZ</strong></li>
+</ul>
+<h3>仅作组合防守观察</h3>
+<ul>
+<li><strong>TZA</strong></li>
+</ul>
+<hr>
+<h2>免责声明</h2>
+<p>以上内容仅为<strong>教育性市场分析与期权策略研究</strong>，<strong>不是投资建议</strong>，不构成任何个性化买卖建议、税务建议或收益保证。<br>
+期权参考价格可能为延迟数据或估算区间，<strong>Greeks、实际成交价、流动性与保证金占用，必须以券商实时报价和你自身账户风险承受能力复核</strong>。<br>
+若你今天只能做一件正确的事，那就是：<strong>只做高流动性、风险已定义、技术位清楚的计划，不去追低价情绪爆量票。</strong></p>
+      <div class="footer">免责声明：本页仅作信息整理与教育用途，不构成投资建议；实盘请结合券商实时行情、期权链与自身风险承受能力复核。</div>
+    </article>
+
+    <section class="card archive">
+      <h2>历史报告</h2>
+      <ul>
+<li><a href="https://allenyao0702.github.io/stock-analysis-reports/reports/2026-05-20-20260521-034456.html">美股开盘后半小时分析报告</a> <span class="badge">2026-05-20 20:44:56 PDT</span></li>
+</ul>
+    </section>
+  </div>
+</body>
+</html>
